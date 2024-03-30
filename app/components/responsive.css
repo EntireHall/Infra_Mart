@@ -1,0 +1,152 @@
+/* logo textDesign1 textDesign2 textDesign0 homeImage background2 background tableHead center-img center-img2*/
+
+
+@media(max-width:640px) {
+    .textDesign1 {
+        font-size: medium !important;
+        font-weight: 700;
+        width: 200px;
+    }
+
+    .textDesign2 {
+        font-size: 20px;
+        font-weight: bolder;
+        width: 300px;
+        text-align: center;
+    }
+
+    .textDesign0 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 20px;
+        text-align: center;
+        top: -250px;
+        z-index: 10;
+    }
+}
+
+@media(max-width:320px) {
+    .textDesign1 {
+        margin-left: 50px;
+    }
+
+    .textDesign0 {
+        left: 10px;
+        top: -150px;
+    }
+}
+
+@media(max-width:340px) {
+    .logo {
+        width: 300px;
+        height: 70px;
+        background-size: 200px;
+        margin-top: 14px;
+    }
+}
+
+@media(max-width:640px) {
+    .tableHead {
+        width: 100%;
+    }
+}
+
+@media(max-width:750px) {
+    .background {
+        background-size: 800px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .background2 {
+        background-size: 100%;
+        width: 100%;
+
+    }
+
+    .homeImage {
+        height: 600px;
+    }
+}
+
+@media(max-width:320px) {
+
+    .center-img {
+        width: 120px;
+        height: 130px;
+        background-image: url("../../public/centerimg.jpg");
+        background-size: 130px;
+        -webkit-clip-path: polygon(0 24%, 50% 0, 100% 24%, 100% 80%, 49% 100%, 0 79%);
+        clip-path: polygon(0 24%, 50% 0, 100% 24%, 100% 80%, 49% 100%, 0 79%);
+        position: absolute;
+        top: 250px;
+        transform: rotate(1deg);
+        margin-left: 0px;
+    }
+
+    .center-img2 {
+        background-image: url("../../public/center.png");
+        background-repeat: no-repeat;
+        height: 220px;
+        width: 200px;
+        transform: rotate(-1deg);
+        margin-left: 65px;
+        top: 280px;
+        position: absolute;
+        background-size: 70px;
+    }
+}
+
+@media(max-width:640px) {
+
+    .hexagon::before {
+        content: "";
+        position: absolute;
+        top: -18.8675px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 37px solid transparent;
+        border-right: 39px solid transparent;
+        border-bottom:19.8675px solid #d2d2d2;
+    }
+
+    .hexagon::after {
+        content: "";
+        position: absolute;
+        bottom: -18.8675px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 37px solid transparent;
+        border-right: 39px solid transparent;
+        border-top: 19.8675px solid #d2d2d2;
+    }
+
+
+    .hexagon {
+        width: 75px;
+        height: 41px;
+        background: #d2d2d2;
+        position: relative;
+    }
+}
+
+@media(max-width:640px)
+{
+    .yealink {
+        background-image: url("../../public/yealink.png");
+        background-size: 300px;
+        background-repeat: no-repeat;
+    }
+    
+    .digital-ocean {
+        background-image: url("../../public/digital_ocean.png");
+        background-size: 300px;
+        background-repeat: no-repeat;
+    }
+}
