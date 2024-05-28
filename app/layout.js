@@ -1,21 +1,15 @@
-
-import "./globals.css"
-import Navbar from "./components/Navbar"
-import Header from "./components/Header"
-// import Footer from "./components/Footer"
-
-
+"use client"
+import React from "react";
+import "./globals.css";
+import { AuthProvider } from "./ContextApi/AuthContext";
 export default function RootLayout({ children }) {
-return (
+  return (
     <html>
-      <body>
-      <>
-      <Header/>
-    <Navbar/>
-    {children}
-    {/* {<Footer/>} */}
-    </>
-      </body>
-    </html>
-  )
+        <body>
+        <AuthProvider>
+          {children}
+        </AuthProvider>
+        </body>
+      </html>
+  );
 }

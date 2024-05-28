@@ -1,9 +1,11 @@
 'use client'
 import React from 'react'
-import "../components/style.css"
+import "../../components/style.css"
 import { Icon } from '@iconify/react'
 import Link from 'next/link'
+
 export default function page() {
+
     return (
         <div>
             <div className='Nav-about relative'>
@@ -25,12 +27,12 @@ export default function page() {
                         </div>
                         <div className='flex flex-col  gap-y-5'>
                             <span className='p-[0.5px] w-[600px] bg-neutral-300' />
-                            <div class='group'>
-                                <div class='flex items-center pt-4 pb-6'>
-                                    <span class='p-[1px] w-[0px]  bg-white transition-all ease-in-out  duration-300 delay-200 group-hover:bg-blue-600 group-hover:w-[40px] group-hover:mr-[30px]'></span>
-                                    <span class='text-2xl font-bold'>Our Vision</span>
+                            <div className='group'>
+                                <div className='flex items-center pt-4 pb-6'>
+                                    <span className='p-[1px] w-[0px]  bg-white transition-all ease-in-out  duration-300 delay-200 group-hover:bg-blue-600 group-hover:w-[40px] group-hover:mr-[30px]'></span>
+                                    <span className='text-2xl font-bold'>Our Vision</span>
                                 </div>
-                                <div class='text-lg text-neutral-700 w-[395px]'>At Mool Network, we envision a connected world where technology seamlessly integrates into our daily lives, enhancing efficiency, security, and overall well-being. Our mission is to be at the forefront of this transformation, offering state-of-the-art low voltage solutions that bridge the gap between innovation and practical implementation.</div>
+                                <div className='text-lg text-neutral-700 w-[395px]'>At Mool Network, we envision a connected world where technology seamlessly integrates into our daily lives, enhancing efficiency, security, and overall well-being. Our mission is to be at the forefront of this transformation, offering state-of-the-art low voltage solutions that bridge the gap between innovation and practical implementation.</div>
                             </div>
 
                         </div>
@@ -39,39 +41,39 @@ export default function page() {
                 <div>
                     <div>
                         <div className='flex gap-10 justify-center items-center m-auto mt-20 h-screen'>
-                            <div class='group'>
-                                <div class='bg-neutral-50 border-2 border-neutral-200/20 shadow-md w-[350px] transition-all duration-300 ease-in-out transform-gpu group-hover:py-[25px] group-hover:bg-[#231f42f3] group-hover:border-2 group-hover:border-blue-600'>
-                                    <div class='flex flex-col mt-5 font-chakra p-10 gap-y-5 group'>
-                                        <div class='flex justify-start'>
-                                            <div class='hexagon2 flex items-center justify-center'><Icon icon="material-symbols:camera-video" className='text-4xl text-white' /></div>
+                            <div className='group'>
+                                <div className='bg-neutral-50 border-2 border-neutral-200/20 shadow-md w-[350px] transition-all duration-300 ease-in-out transform-gpu group-hover:py-[25px] group-hover:bg-[#231f42f3] group-hover:border-2 group-hover:border-blue-600'>
+                                    <div className='flex flex-col mt-5 font-chakra p-10 gap-y-5 group'>
+                                        <div className='flex justify-start'>
+                                            <div className='hexagon2 flex items-center justify-center'><Icon icon="material-symbols:camera-video" className='text-4xl text-white' /></div>
                                         </div>
-                                        <span class='text-3xl pt-5 font-extrabold text-black group-hover:text-white transition-all ease-in-out duration-200 cursor-pointer delay-100 hover:text-blue-600'>Expertise</span>
-                                        <span class='text-md text-neutral-400 group-hover:text-white'>In a rapidly evolving technological landscape, we stay ahead of the curve by embracing innovation. From advanced surveillance systems to smart home automation, our solutions are designed to keep you on the cutting edge.</span>
-                                        <div class='border-2 p-5 w-fit text-xl text-white opacity-0 transition-all duration-200 delay-100 ease-in-out group-hover:opacity-100 hover:bg-blue-500'><Icon icon="fe:arrow-right" /></div>
+                                        <span className='text-3xl pt-5 font-extrabold text-black group-hover:text-white transition-all ease-in-out duration-200 cursor-pointer delay-100 hover:text-blue-600'>Expertise</span>
+                                        <span className='text-md text-neutral-400 group-hover:text-white'>In a rapidly evolving technological landscape, we stay ahead of the curve by embracing innovation. From advanced surveillance systems to smart home automation, our solutions are designed to keep you on the cutting edge.</span>
+                                        <div className='border-2 p-5 w-fit text-xl text-white opacity-0 transition-all duration-200 delay-100 ease-in-out group-hover:opacity-100 hover:bg-blue-500'><Icon icon="fe:arrow-right" /></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class='group'>
-                                <div class='bg-neutral-50 border-2 border-neutral-200/20 shadow-md w-[350px] transition-all duration-300 ease-in-out transform-gpu group-hover:py-[25px] group-hover:bg-[#231f42f3] group-hover:border-2 group-hover:border-blue-600'>
-                                    <div class='flex flex-col mt-5 font-chakra p-10 gap-y-5 group'>
-                                        <div class='flex justify-start'>
-                                            <div class='hexagon2 flex items-center justify-center'><Icon icon="material-symbols:camera-video" className='text-4xl text-white' /></div>
+                            <div className='group'>
+                                <div className='bg-neutral-50 border-2 border-neutral-200/20 shadow-md w-[350px] transition-all duration-300 ease-in-out transform-gpu group-hover:py-[25px] group-hover:bg-[#231f42f3] group-hover:border-2 group-hover:border-blue-600'>
+                                    <div className='flex flex-col mt-5 font-chakra p-10 gap-y-5 group'>
+                                        <div className='flex justify-start'>
+                                            <div className='hexagon2 flex items-center justify-center'><Icon icon="material-symbols:camera-video" className='text-4xl text-white' /></div>
                                         </div>
-                                        <span class='text-3xl pt-5 font-extrabold text-black group-hover:text-white transition-all ease-in-out duration-200 cursor-pointer delay-100 hover:text-blue-600'>Expertise</span>
-                                        <span class='text-md text-neutral-400 group-hover:text-white'>In a rapidly evolving technological landscape, we stay ahead of the curve by embracing innovation. From advanced surveillance systems to smart home automation, our solutions are designed to keep you on the cutting edge.</span>
-                                        <div class='border-2 p-5 w-fit text-xl text-white opacity-0 transition-all duration-200 delay-100 ease-in-out group-hover:opacity-100 hover:bg-blue-500'><Icon icon="fe:arrow-right" /></div>
+                                        <span className='text-3xl pt-5 font-extrabold text-black group-hover:text-white transition-all ease-in-out duration-200 cursor-pointer delay-100 hover:text-blue-600'>Expertise</span>
+                                        <span className='text-md text-neutral-400 group-hover:text-white'>In a rapidly evolving technological landscape, we stay ahead of the curve by embracing innovation. From advanced surveillance systems to smart home automation, our solutions are designed to keep you on the cutting edge.</span>
+                                        <div className='border-2 p-5 w-fit text-xl text-white opacity-0 transition-all duration-200 delay-100 ease-in-out group-hover:opacity-100 hover:bg-blue-500'><Icon icon="fe:arrow-right" /></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class='group'>
-                                <div class='bg-neutral-50 border-2 border-neutral-200/20 shadow-md w-[350px] transition-all duration-300 ease-in-out transform-gpu group-hover:py-[25px] group-hover:bg-[#231f42f3] group-hover:border-2 group-hover:border-blue-600'>
-                                    <div class='flex flex-col mt-5 font-chakra p-10 gap-y-5 group'>
-                                        <div class='flex justify-start'>
-                                            <div class='hexagon2 flex items-center justify-center'><Icon icon="material-symbols:camera-video" className='text-4xl text-white' /></div>
+                            <div className='group'>
+                                <div className='bg-neutral-50 border-2 border-neutral-200/20 shadow-md w-[350px] transition-all duration-300 ease-in-out transform-gpu group-hover:py-[25px] group-hover:bg-[#231f42f3] group-hover:border-2 group-hover:border-blue-600'>
+                                    <div className='flex flex-col mt-5 font-chakra p-10 gap-y-5 group'>
+                                        <div className='flex justify-start'>
+                                            <div className='hexagon2 flex items-center justify-center'><Icon icon="material-symbols:camera-video" className='text-4xl text-white' /></div>
                                         </div>
-                                        <span class='text-3xl pt-5 font-extrabold text-black group-hover:text-white transition-all ease-in-out duration-200 cursor-pointer delay-100 hover:text-blue-600'>Expertise</span>
-                                        <span class='text-md text-neutral-400 group-hover:text-white'>In a rapidly evolving technological landscape, we stay ahead of the curve by embracing innovation. From advanced surveillance systems to smart home automation, our solutions are designed to keep you on the cutting edge.</span>
-                                        <div class='border-2 p-5 w-fit text-xl text-white opacity-0 transition-all duration-200 delay-100 ease-in-out group-hover:opacity-100 hover:bg-blue-500'><Icon icon="fe:arrow-right" /></div>
+                                        <span className='text-3xl pt-5 font-extrabold text-black group-hover:text-white transition-all ease-in-out duration-200 cursor-pointer delay-100 hover:text-blue-600'>Expertise</span>
+                                        <span className='text-md text-neutral-400 group-hover:text-white'>In a rapidly evolving technological landscape, we stay ahead of the curve by embracing innovation. From advanced surveillance systems to smart home automation, our solutions are designed to keep you on the cutting edge.</span>
+                                        <div className='border-2 p-5 w-fit text-xl text-white opacity-0 transition-all duration-200 delay-100 ease-in-out group-hover:opacity-100 hover:bg-blue-500'><Icon icon="fe:arrow-right" /></div>
                                     </div>
                                 </div>
                             </div>

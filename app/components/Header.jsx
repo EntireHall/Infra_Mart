@@ -1,6 +1,17 @@
-import Link from 'next/link';
+"use client"
 import React from 'react'
+import { useContext } from 'react';
+import Link from 'next/link';
+import { AuthContext } from '../ContextApi/AuthContext';
+import { useRouter } from 'next/navigation';
 export default function Header() {
+
+    const { token , logout } = useContext(AuthContext);
+    console.log(token);
+    const LogOut = () =>
+    {
+        logout();
+    }
     return (
         <div className='flex justify-center items-center py-4 bg-[#14193c] text-white font-chakra'>
             <div className='w-full max-w-[1200px] px-6'>
@@ -24,15 +35,21 @@ export default function Header() {
                                 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391z" /></svg>+1 236-885-2533
                         </div>
                     </div>
-
                     <div className='text-base font-semibold flex items-center gap-1 transition-colors text-blue-600 ease-in-out duration-200 delay-300 hover:text-white mt-4 md:mt-0'>
                         GET A QUOTE<svg className='rotate-180' xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="m14 7l-5 5m0 0l5 5" /></svg>
                     </div>
-                    <div>
-                        <Link href={"/form"}>
-                        <button>LOGIN</button>
-                        </Link>
-                    </div>
+                    {token ?
+                        <>
+                            <Link href={'/'}>
+                                <button onClick={LogOut}>LOGOUT</button>
+                            </Link>
+                        </>
+                        :
+                        <>
+                            <Link href={"/"}>
+                                <button>LOGIN</button>
+                            </Link>
+                        </>}
                 </div>
             </div>
         </div>

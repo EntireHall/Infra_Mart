@@ -20,7 +20,7 @@ export default function Blog() {
             const response = await axios.get(BASEURL);
             setData(response.data.posts);
             setLoading(false);
-        } catch (error) {
+        }catch (error) {
             setLoading(false);
             console.error('Error fetching data:', error);
         }

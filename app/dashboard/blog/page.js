@@ -2,7 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Icon } from '@iconify/react'
-import Blog from '../components/Blog'
+import Blog from '../../components/Blog'
 export default function page() {
     return (
         <div>

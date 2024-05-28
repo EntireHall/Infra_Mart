@@ -22,11 +22,11 @@ export default function Navbar() {
 
 
     const Navlink = [
-        { name: 'HOME', path: '/' },
-        { name: 'ABOUT US', path: '/about' },
-        { name: 'SERVICES', path: '/service' },
-        { name: 'BLOGS', path: '/blog' },
-        { name: 'CONTACT US', path: '/contact' }
+        { name: 'HOME', path: '/dashboard/home' },
+        { name: 'ABOUT US', path: '/dashboard/about' },
+        { name: 'SERVICES', path: '/dashboard/service' },
+        { name: 'BLOGS', path: '/dashboard/blog' },
+        { name: 'CONTACT US', path: '/dashboard/contact' }
     ];
 
     const [navbarClass, setNavbarClass] = useState('');
@@ -63,7 +63,6 @@ export default function Navbar() {
                                         <Link href={path} prefetch
                                             className={`${isActive(path) ? 'text-black font-bold underline underline-offset-2' : ' '} hover:text-neutral-300`}>
                                             {name}
-
                                         </Link>
                                     </li>
                                 ))}

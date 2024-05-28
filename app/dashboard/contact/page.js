@@ -1,7 +1,6 @@
 'use client'
-import React from 'react'
-import "../components/style.css"
-import "../components/responsive.css"
+import "../../components/style.css"
+import "../../components/responsive.css"
 import { useState, useEffect } from 'react';
 import { Icon } from '@iconify/react'
 import Link from 'next/link'
