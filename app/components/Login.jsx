@@ -14,11 +14,9 @@ export default function LoginPage() {
         try {
             const response = await fetch('https://dummyjson.com/auth/login', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({  username: 'kminchelle', password: '0lelplR'}),
-            });
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username: 'emilys', password: 'emilyspass', })
+              })
             if (response.ok) {
                 const data = await response.json();
                 const token = data.token;

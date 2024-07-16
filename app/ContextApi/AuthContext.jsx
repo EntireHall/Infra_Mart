@@ -24,18 +24,18 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem('token');
   };
 
-  // useEffect(() => {
-  //   if (token !== null) {
-  //     console.log("HELLO CONSOLE");
-  //    const setPath = (`${pathname}dashboard/home`);
-  //     router.push(setPath);
-  //     console.log(setPath);
-  //   }
-  //   else {
+  useEffect(() => {
+    if (token !== null) {
+      console.log("HELLO CONSOLE");
+     const setPath = (`${pathname}dashboard/home`);
+      router.push(setPath);
+      console.log(setPath);
+    }
+    else {
       
-  //     console.log("BYE CONCOLE");
-  //   }
-  // },[path]);
+      console.log("BYE CONCOLE");
+    }
+  },[path]);
 
 
   return (
